@@ -45,7 +45,6 @@ class HBNBCommand(cmd.Cmd):
             retl.append(curly_braces.group())
             return retl
 
-
     def do_EOF(self, line):
         "Exit the program with Ctrl+D"
         print("")
