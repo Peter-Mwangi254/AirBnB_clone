@@ -20,7 +20,7 @@ class BaseModel:
             - **kwargs: dict of key-values arguments
         """
 
-         if kwargs is not None and kwargs != {}:
+        if kwargs is not None and kwargs != {}:
             for key in kwargs:
                 if key == "created_at":
                     self.__dict__["created_at"] = datetime.strptime(
@@ -30,7 +30,7 @@ class BaseModel:
                         kwargs["updated_at"], self.date_format)
                 else:
                     self.__dict__[key] = kwargs[key]
-        else:
+        else:git
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
             self.updated_at = datetime.now()
