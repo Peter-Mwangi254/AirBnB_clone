@@ -1,1 +1,1 @@
-{"BaseModel.01172920-9dbe-4366-a7b8-873764d75c93": null}
+{"BaseModel.1a9c9941-2363-4440-a905-e8a0785f9165": {"id": "1a9c9941-2363-4440-a905-e8a0785f9165", "created_at": "2023-12-12T01:36:04.416311", "updated_at": "2023-12-12T01:36:04.429266", "name": "My First Model", "my_number": 89, "__class__": "BaseModel"}}

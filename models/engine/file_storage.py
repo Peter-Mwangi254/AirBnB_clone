@@ -50,4 +50,7 @@ class FileStorage:
                 json_dict = json.load(file)
             for key, value in json_dict.items():
                 class_name = key.split(".")
-                FileStorage.__objects[key] = globals()[class_name[0]](**value)
+                if value is not None:
+                    FileStorage.__objects[key] = globals()[class_name[0]](**value)
+                else:
+                    pass
