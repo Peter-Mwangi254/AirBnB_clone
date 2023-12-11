@@ -135,6 +135,6 @@ $
 
 ## Authors
 
-Perpetua Akwiri Otieno | Email: [perpetualakwiri](mailto:perpetualakwiri@gmail.com)
+Perpetua Akwiri Otieno | Email: [perpetualakwiri@gmail.com](mailto:perpetualakwiri@gmail.com)
 
-Peter Brian Mwangi | Email: [wahomebrian](mailto:wahomebrian98@gmail.com)
+Peter Brian Mwangi | Email: [wahomebrian98@gmail.com](mailto:wahomebrian98@gmail.com)
