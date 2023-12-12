@@ -4,7 +4,7 @@ BaseModel class that defines all common attributes/methods for other classes
 """
 import cmd
 import shlex
-#from split import split
+from split import split
 from models.base_model import BaseModel
 from models.user import User
 from models.place import Place

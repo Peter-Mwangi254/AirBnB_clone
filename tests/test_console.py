@@ -41,8 +41,6 @@ class TestHBNB_prompt(unittest.TestCase):
 
 
 class TestHBNBcreate(unittest.TestCase):
-
-
     @classmethod
     def setUp(self):
         try:
@@ -110,8 +108,6 @@ class TestHBNBcreate(unittest.TestCase):
             self.assertLess(0, len(output.getvalue().strip()))
             testKey = "Review.{}".format(output.getvalue().strip())
             self.assertIn(testKey, storage.all().keys())
-
-
 
 
 if __name__ == "__main__":

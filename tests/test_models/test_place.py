@@ -69,5 +69,6 @@ class Test_Place(unittest.TestCase):
         self.assertTrue('longitude' in self.place.__dict__)
         self.assertTrue('amenity_ids' in self.place.__dict__)
 
+
 if __name__ == "__main__":
     unittest.main()
