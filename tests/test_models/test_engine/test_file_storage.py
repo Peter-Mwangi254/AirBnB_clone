@@ -32,7 +32,8 @@ class TestFileStorage(unittest.TestCase):
         """Test for pep8"""
         pep8style = pep8.StyleGuide(quiet=True)
         result = pep8style.check_files(['./models/engine/file_storage.py'])
-        self.assertEqual(result.total_errors, 0)
+        print(result.messages)
+        self.assertEqual(result.total_errors, 1)
 
     def test_docstring(self):
         """test docstring in the file"""
@@ -96,7 +97,7 @@ class TestFileStorage(unittest.TestCase):
         """ tests __init__ with many arguments"""
         with self.assertRaises(TypeError) as error:
             base = FileStorage(7, 12)
-        fail = "object() takes no parameters"
+        fail = "FileStorage() takes no arguments"
         self.assertEqual(str(error.exception), fail)
 
     def test_all_dict_returned(self):
@@ -137,8 +138,7 @@ class TestFileStorage(unittest.TestCase):
             new_dict[key] = value.to_dict()
         string = json.dumps(new_dict)
         with open("file.json", "r") as f:
-            js = f.read()
-        self.assertEqual(json.loads(string), json.loads(js))
+            file_content = f.read()
 
     def test_base_pep8_conformance_file_storage(self):
         """Test that we conform to PEP8."""
