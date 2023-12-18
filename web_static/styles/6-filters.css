@@ -1,0 +1,11 @@
+.popover {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.locations:hover .popover {
+    display: block;
+    background-color: #FAFAFA;
+    width: 100%;
+}
